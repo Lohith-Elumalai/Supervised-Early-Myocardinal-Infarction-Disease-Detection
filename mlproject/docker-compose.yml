@@ -1,0 +1,13 @@
+services:
+  superset:
+    build: .
+    container_name: superset
+    environment:
+      - SUPERSET_SECRET_KEY=vzRk8INOaECVnabw9LmGVaFcUTBSWoe/0U3n9nZKYx1WluhkX9jtkgAg
+      - SUPERSET_CONFIG_PATH=/app/pythonpath/superset_config.py
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./superset_home:/home/superset
+      - ./superset_config.py:/app/pythonpath/superset_config.py
+    restart: always
