@@ -4,9 +4,6 @@ An end-to-end ECG image classification project that combines transfer learning,
 Kafka-based streaming inference, PostgreSQL prediction storage, and a Streamlit
 dashboard.
 
-> **Medical notice:** This project is for research and educational use only. It
-> is not a medical device and must not be used to diagnose, triage, or treat a
-> patient. Predictions require validation by qualified medical professionals.
 
 ## What the project does
 
